@@ -3,7 +3,7 @@ import parts from "../../../assets/images/about_us/parts.jpg";
 
 const About = () => {
 	return (
-		<div className="min-h-screen hero bg-base-200">
+		<div className="hero bg-base-200">
 			<div className="flex-col hero-content lg:flex-row">
 				<div className="relative lg:w-1/2">
 					<img
