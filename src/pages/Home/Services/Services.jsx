@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import ServiceCard from "./ServiceCard";
+import { api } from "../../../utility/api";
 
 const Services = () => {
 	const [services, setServices] = useState([]);
 
 	useEffect(() => {
-		fetch(`../services.json`)
+		fetch(`${api}/services`)
 			.then((res) => res.json())
 			.then((data) => {
 				setServices(data);
