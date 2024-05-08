@@ -11,12 +11,12 @@ const ServiceCard = ({ service }) => {
 					className="rounded-xl"
 				/>
 			</figure>
-			<div className="items-center text-center card-body">
+			<div className="card-body">
 				<h2 className="card-title">{title}</h2>
-				<p>Price: ${price}</p>
+				<p className="text-orange-500">Price: ${price}</p>
 				<div className="card-actions">
 					<Link to={`/checkout/${_id}`}>
-						<button className="btn btn-primary">Buy Now</button>
+						<button className="btn btn-primary">Book Now</button>
 					</Link>
 				</div>
 			</div>
